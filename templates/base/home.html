@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container mt-5">
+	<div class="row">
+		<div class="col-md-3">
+			<div id="profile-wrapper" class="card card-body h-100 border-info">
+				<img id="profile-pic" src="{% static 'images/estaes.jpg' %}">
+				<hr>
+				<h4>Hola! soy ima</h4>
+				<p>balksjdf asldjf lsdjf lkasjdf ljadslfkj</p>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div class="card card-body h-100 border-info">
+				<h4>Mi historia como desarrollador</h4>
+				<hr>
+				<p>olore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row mt-5">
+		<div class="col-md-6">
+			<div class="card card-body h-100 border-info">
+				<h4>Mi experiencia</h4>
+				<hr>
+				<p>olore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute</p>
+				<p>olore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute</p>
+				<h4>Bla Bla Bla</h4>
+				<hr>
+				<p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="card card-body h-100 ">
+				<h4>Mis Proyectos</h4>
+				<hr>
+				<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<a href="{% url 'projects' 1 %}">
+								<img src="{% static 'images/b.jpg' %}" class="d-block w-100" alt="...">
+							</a>
+							<div class="carousel-caption d-none d-md-block">
+								<h5 id="port-name">CRM</h5>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<a href="{% url 'projects' 2 %}">
+								<img src="{% static 'images/a.jpg' %}" class="d-block w-100" alt="...">
+							</a>
+							<div class="carousel-caption d-none d-md-block">
+								<h5 id="port-name">CHARTS APP</h5>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<a href="{% url 'projects' 3 %}">
+								<img src="{% static 'images/c.jpg' %}" class="d-block w-100" alt="...">
+							</a>
+							<div class="carousel-caption d-none d-md-block">
+								<h5 id="port-name">TWITTER BOT</h5>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<a href="{% url 'projects' 4 %}">
+								<img src="{% static 'images/d.jpg' %}" class="d-block w-100" alt="...">
+							</a>
+							<div class="carousel-caption d-none d-md-block">
+								<h5 id="port-name">GAME OF LIFE</h5>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button> 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
+
+
+
