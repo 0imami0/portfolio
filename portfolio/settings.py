@@ -11,7 +11,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['imasport.herokuapp.com', '127.0.0.1']
 
 
 
@@ -29,6 +29,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -92,10 +93,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # MEDIA_URL = '/images/'
 
-# Esto es para que load statik de django
+# para que load statik de django
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+# for deployment collectstatic
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 
