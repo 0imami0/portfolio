@@ -26,6 +26,18 @@ p{
 }
 
 
+a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#2e2e2e; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+
 #profile-pic{
 	width:150px;
 	height: 150px;
@@ -50,4 +62,19 @@ p{
 			max-width: 1500px;
 				/*max-width: 1300px;*/
 		}
+}
+
+.social-links ul, li{
+	list-style-type:none;
+	display: inline-block;
+}
+
+.social{
+	width:20px;
+	height: 20px;
+}
+
+ul{
+	padding: 0;
+    list-style-type: none;
 }
