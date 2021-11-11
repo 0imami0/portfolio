@@ -6,7 +6,8 @@ from django.http import HttpResponse
 def home(request):
 	return render(request, 'base/home.html')
 
-
+def contact(request):
+	return render(request, 'base/contact.html')
 
 def projects(request, pk):
 	if pk == 1:

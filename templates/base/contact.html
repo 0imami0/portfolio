@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container mx-auto mt-3 mb-3">
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <div class="card text-white bg-danger mx-auto" >
+        <div class="card-body">
+          <h1>Phone: +52 33 2579 5850</h1>
+          <p></p>
+          <hr>
+          <h1>Gmail: 000ima.ami333@gmail.com</h1>
+          <p></p>
+          <hr>
+          <a href="{% url 'home' %}" class="btn btn-danger m-1">HOME</a>
+        </div>
+      </div>      
+    </div>
+  </div>
+</div>
+
+{% endblock %}
