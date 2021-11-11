@@ -1,14 +1,24 @@
 body{
 	background-color: rgba(36, 36, 36)!important;
+	font-family: 'Roboto', sans-serif;
 	/*padding-top: 25px;*/
 }
 
+#my-p{
+	color: rgba(128, 128, 128)!important;
+	padding-left: 25px;
+}
+
 h4{
-	color: white;
+	color: rgba(56, 105, 112)
+	/*color: rgba(212, 212, 212)*/
+
 }
 
 h5{
-	color: white;
+	color: rgba(56, 105, 112)
+	/*color: rgba(212, 212, 212)*/
+
 }
 
 
@@ -22,7 +32,7 @@ h5{
 
 
 p{
-	color: lightgray;
+	color: rgba(181, 181, 181)
 }
 
 
