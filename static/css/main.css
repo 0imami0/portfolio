@@ -1,59 +1,19 @@
 body{
-	background-color: rgba(36, 36, 36)!important;
-	font-family: 'Roboto', sans-serif;
-	/*padding-top: 25px;*/
+	background-color:#F8F8F8!important;
+	font-family: 'Open Sans', sans-serif;
 }
 
-#my-p{
-	/*color: rgba(128, 128, 128)!important;*/
-	padding-left: 25px;
-}
 
+h5,
 h4{
-	color: rgba(56, 105, 112)
-	/*color: rgba(212, 212, 212)*/
-
-}
-
-h5{
-	color: rgba(56, 105, 112)
-	/*color: rgba(212, 212, 212)*/
-
-}
-
-
-#port-name {
-    display: table; /* keep the background color wrapped tight */
-    margin: 0px auto 0px auto; /* keep the table centered */
-    padding:5px;font-size:20px;
-    background-color:darkcyan;
-    color:white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 }
 
 
 p{
-	color: rgba(181, 181, 181)
-}
-
-
-a {
-    color: #2e2e2e;
-    text-decoration: none;
-}
-
-a:hover {
-    color:#2e2e2e; 
-    text-decoration:none; 
-    cursor:pointer;  
-}
-
-
-#profile-pic{
-	width:150px;
-	height: 150px;
-	border-radius: 50%;
-	margin-left: auto;
-	margin-right: auto;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
 
 
@@ -61,30 +21,31 @@ a:hover {
 	text-align: center;
 }
 
-.card-body{
-	background: #2e2e2e;
-	color: grey;
+#profile-pic{
+	width:150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-left: auto;
+  	margin-right: auto;
 }
 
-
-@media (min-width: 1200px) {
-		.container{
-			max-width: 1500px;
-				/*max-width: 1300px;*/
-		}
+ul{
+	padding: 0;
+    list-style-type: none;
 }
+
 
 .social-links ul, li{
 	list-style-type:none;
 	display: inline-block;
 }
 
+ul {
+    padding-left: 0rem!important;
+}
+
+
 .social{
 	width:20px;
 	height: 20px;
-}
-
-ul{
-	padding: 0;
-    list-style-type: none;
 }

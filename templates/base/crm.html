@@ -2,26 +2,31 @@
 {% load static %}
 {% block content %}
 <div class="container mx-auto mt-3 mb-3">
-  <div class="row">
-    <div class="col-md-10 mx-auto">
-      <div class="card border-info mx-auto" >
-        <img src="{% static 'images/b.jpg' %}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">CRM</h5>
-          <p class="card-text"></p>
-          <p>A management tool designed for small business owners to organize and improve the relationship between business and customers</p>
-          <p></p>
-          <p>"become more efficient and improve your business productivity through sales records, a user registration system and an easy/friendly user interface"</p>
-          <hr>
-          <p>Admin: super</p>
-          <p>Password: imadmin123</p>
-          <hr>
-          <a href="https://crm-lives.herokuapp.com/" class="btn btn-info">visit my project :D</a>
-          <a href="https://github.com/0imami0/CRM/" class="btn btn-info ms-3">source code</a>
-          <a href="{% url 'home' %}" class="btn btn-dark ms-3">HOME</a>
-        </div>
-      </div>      
-    </div>
-  </div>
+	<div class="row">
+		<div class="col-md-10 mx-auto">
+			<div class="card border-info mx-auto" >
+				<img src="{% static 'images/b.jpg' %}" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">CRM</h5>
+					<h6>
+            			<span class="badge rounded-pill bg-info text-dark">Django</span>&nbsp;&nbsp;&nbsp;
+            			<span class="badge rounded-pill bg-info text-dark">Bootstrap</span>&nbsp;&nbsp;&nbsp;
+            			<span class="badge rounded-pill bg-info text-dark">SQLite</span>
+          			</h6>
+					<p class="card-text"></p>
+					<p>Sales tracker, you can access as a user by creating an account and see your purchase history or as an administrator to create, delete, or update customers purchase history and status</p>
+					<p></p>
+					<p>I implemented multiple features from Django such as signals, filter sets, Django User model, Django class-based views to provide users the ability to create an account and change passwords, etc. </p>
+					<hr>
+					<p>Admin: super</p>
+					<p>Password: imadmin123</p>
+					<hr>
+					<a href="https://crm-lives.herokuapp.com/" class="btn btn-info">visit my project</a>
+					<a href="https://github.com/0imami0/CRM/" class="btn btn-info ms-3">source code</a>
+					<a href="{% url 'home' %}" class="btn btn-dark ms-3">HOME</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 {% endblock %}

@@ -2,58 +2,97 @@
 {% load static %}
 {% block content %}
 
-<div class="container mt-3 mt-sm-5">
+<br>
+<div class="container">
 	<div class="row">
-		<div class="col-xs-12 col-sm-12 col-lg-3">
-			<div id="profile-wrapper" class="card card-body h-100 border-info">
-				<img id="profile-pic" src="{% static 'images/estaes.jpg' %}">
+		<div class="col-md-3">
+			<div class="card card-body h-100  border-info" id="profile-wrapper">
+				<img id="profile-pic" src="{% static 'images/estaes.jpg' %}" >
 				<hr>
-				<h4>HI! I'm ima</h4>
-				<p></p>
-					<ul class="social-links">
-						<a href="https://twitter.com/Adopta_Dog">
-							<li><img class="social" src="{% static 'images/twitter.png' %}"></li>
-						</a>
-						<a href="https://www.linkedin.com/in/imanol-v%C3%A1zquez-dom%C3%ADnguez-34043a226">
-							<li><img class="social" src="{% static 'images/linkedin.png' %}"></li>
-						</a>
-					</ul>
-					<a href="{% url 'contact' %}" class="btn btn-danger m-1">MY ONTACT INFORMATION ;D</a>
+				<h4>Hi I'm Ima!</h4>
+				<p>000ima.ami333@gmail.com</p>
+				<p>+52 (33) 2579 5850</p>
 			</div>
 		</div>
-		<div class="col-xs-12 col-sm-12 col-lg-9">
-			<div class="card card-body h-100 border-info">
-				<h4>ABOUT ME</h4>
+
+		<div class="col-md-9">
+			<div class="card card-body h-100  border-info">
+				<h4>About Me</h4>
 				<hr>
-				<p></p>
-				<p></p>
-				<p>Hi, my name is Imanol Vázquez Domínguez. I'm a self-taught Python developer and software engineering student.</p>
-				<p>I started coding as a hobby but after a while I became very passionate about it, so I decided to take it seriously, even change my career path.</p>
-				<p>Since then, I've been working hard to obtain a good grasp of the fundamentals and a vast variety of tools and projects in order to become a proficient and confident developer in the professional field.</p>
-				<p>My university program is 100% online and super flexible, I have no problem at all with full-time jobs. </p>
+				<p>I'm a software engineering student. I have been in touch with programming since high school but started taking it more seriously a couple of years ago. Trying to build something new and learn in the process is my biggest hobby.</p>
+
+				<p>My knowledge and personal projects are mostly related to web development with Django and a little bit of automation, but I'm always learning new things through courses or books, at the moment I'm learning about API development with React and Django REST Framework</p>
+				<p>I consider myself a self-taught learner, and I'm looking for an entry-level position related to software development.</p>
+
+				<ul class="social-links">
+					<li><img class="social" src="{% static 'images/linkedin.png' %}"></li>
+					<li><img class="social" src="{% static 'images/twitter.png' %}"></li>
+				</ul>
+
 			</div>
 		</div>
 	</div>
-
-
-	<div class="row mt-lg-5">
-		<div class="col-xs-12 col-sm-12 col-lg-6">
-			<div class="card card-body h-100 border-info">
-				<h4>WHAT I KNOW</h4>
+	<br>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card card-body h-100">
+				<h4>
+					My Developer Stack
+					<small class="text-muted h6">(blue for confident & grey for learning)</small>
+				</h4>
 				<hr>
-				<p>Python, Django, Flask, SQL(postgres), enough CSS and HTML for bootstrap, Git, very comfortable with Linux environments, Heroku, some AWS like s3 buckets. </p>
-				<p></p>
-				<h4>MY SOFT SKILLS</h4>
-				<hr>
-				<p>As an autodidact dev, I developed a set of usefull and vavaluable skills:</p>
-				<p id="my-p">Reverse engineering, I can learn by having a final product to tear apart piece by piece.</p>
-				<p id="my-p">I need to understand what I'm doing and why. Therefore, I tend to read a lot of documentation.</p>
-				<p id="my-p">I'm really passionate about the field. I'm always searching for new technologies to learn and different ways to improve my skills.</p>
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">Languages</th>
+							<th scope="col">Frameworks & Libraries</th>
+							<th scope="col">Tools</th>
+							<th scope="col">Spoken</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<span class="badge rounded-pill bg-info text-dark">Python</span>&nbsp;&nbsp;&nbsp;
+								<span class="badge rounded-pill bg-info text-dark">SQL</span>&nbsp;&nbsp;&nbsp;
+								<span class="badge rounded-pill bg-secondary">JavaScript</span>
+								<br>
+								<p></p>
+								<span class="badge rounded-pill bg-info text-dark">HTML</span>&nbsp;&nbsp;&nbsp;
+								<span class="badge rounded-pill bg-secondary">CSS</span>
+							</td>
+							<td>
+								<span class="badge rounded-pill bg-info text-dark">Django</span>&nbsp;&nbsp;&nbsp;
+								<span class="badge rounded-pill bg-info text-dark">Bootstrap</span>&nbsp;&nbsp;&nbsp;
+								<span class="badge rounded-pill bg-secondary">React</span>
+								<br>
+								<p></p>
+								<span class="badge rounded-pill bg-secondary">Django REST framework</span>
+							</td>
+							<td>
+								<span class="badge rounded-pill bg-info text-dark">Git</span>&nbsp;&nbsp;&nbsp;
+								<span class="badge rounded-pill bg-info text-dark">Heroku</span>&nbsp;&nbsp;&nbsp;
+								<span class="badge rounded-pill bg-info text-dark">Virtualenv</span>
+								<br>
+							</td>
+							<td>
+								<span class="badge rounded-pill bg-info text-dark">Spanish</span>&nbsp;&nbsp;&nbsp;
+								<span class="badge rounded-pill bg-info text-dark">English</span>&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
-		<div class="col-xs-12 col-sm-12 col-lg-6">
-			<div class="card card-body h-100 ">
-				<h4>MY PROJECTS</h4>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card card-body h-100">
+				<h4>
+					Featured Projects
+					<small class="text-muted h6">(click the image for more information)</small>	
+				</h4>
 				<hr>
 				<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
 					<div class="carousel-indicators">
@@ -61,9 +100,18 @@
 						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
 						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
 						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
+							<a href="{% url 'projects' 0 %}">
+								<img src="{% static 'images/e.png' %}" class="d-block w-100" alt="...">
+							</a>
+							<div class="carousel-caption d-none d-md-block">
+								<h5 id="port-name">NOTES APP</h5>
+							</div>
+						</div>
+						<div class="carousel-item ">
 							<a href="{% url 'projects' 1 %}">
 								<img src="{% static 'images/b.jpg' %}" class="d-block w-100" alt="...">
 							</a>
@@ -108,9 +156,6 @@
 			</div>
 		</div>
 	</div>
+	<br>
 </div>
-
 {% endblock %}
-
-
-

@@ -8,16 +8,22 @@
         <img src="{% static 'images/a.jpg' %}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Charts app</h5>
-          <p class="card-text">Simple web app to create polls and return a graphical interpretation of the results after voting</p>
-          <p>Future improvements:
-          I plan to give users the ability to create their own polls and personal accounts to keep track of their activity, recommend polls related to certain topics, etc. Also, limit the number of votes per question per user
+          <h6>
+            <span class="badge rounded-pill bg-info text-dark">Django</span>&nbsp;&nbsp;&nbsp;
+            <span class="badge rounded-pill bg-info text-dark">JavaSctipy</span>&nbsp;&nbsp;&nbsp;
+            <span class="badge rounded-pill bg-info text-dark">Bootstrap</span>&nbsp;&nbsp;&nbsp;
+            <span class="badge rounded-pill bg-info text-dark">SQLite</span>
+          </h6>
+          <p class="card-text">Simple website to create polls as admin and vote as user. It returns a graphical interpretation of the results after voting</p>
+          <p>For this project, I implemented Django at the back end, bootstrap for the front end, and JavaScript for the charts
           </p>
           <hr>
+          <p>Log on as admin to create your own polls </p>
           <p>Admin: super</p>
           <p>Password: imadmin123</p>
           <p>Admin site link: https://imavote.herokuapp.com/admin/</p>
           <hr>
-          <a href="https://imavote.herokuapp.com/" class="btn btn-info">visit my Project :D</a>
+          <a href="https://imavote.herokuapp.com/" class="btn btn-info">visit my Project</a>
           <a href="https://github.com/0imami0/voteApp/" class="btn btn-info ms-3">source code</a>
           <a href="{% url 'home' %}" class="btn btn-dark ms-3">HOME</a>
         </div>

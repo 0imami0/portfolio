@@ -18,5 +18,7 @@ def projects(request, pk):
 		temp = 'base/bot.html'
 	elif pk == 4:
 		temp = 'base/gol.html'
+	elif pk == 0:
+		temp = 'base/notes.html'
 	return render(request, temp)
 	
